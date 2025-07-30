@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hopcake</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Hopcake</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order-form">Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="intro-section">
+                <h2>Welcome to Hopcake! 🐇</h2>
+                <p>At Hopcake, we specialize in fluffy, cloud-like pancakes served in a cozy bunny-themed café.</p>
+                <p>Our pancakes come in a variety of delightful flavors, including classic vanilla, rich chocolate, sweet strawberry, fragrant matcha, and warm cinnamon spice.</p>
+                <p>Pair your pancakes with our selection of refreshing beverages, from freshly brewed coffee and tea to creamy milkshakes and fruity iced drinks.</p>
+                <p>Take a hop into our menu below and discover your next favorite treat! 🥞</p>
+            </section>
+
+            <section class="menu-section">
+                <h2 class="heading" id="menu">Menu</h2>
+                <h3>Fluffy Pancakes</h3>
+                <ul>
+                    <li><b>Classic Vanilla Cloud</b><br>soft, fluffy pancake with maple syrup & butter.</li>
+                    <li><b>Choco Hop</b><br>rich chocolate pancake topped with smooth ganache.</li>
+                    <li><b>Strawberry Bunny</b><br>fluffy pancake with fresh strawberries & whipped cream.</li>
+                    <li><b>Matcha Meadow</b><br>matcha-flavored pancake with sweet cream.</li>
+                    <li><b>Cinnamon Pyon</b><br>warm pancake sprinkled with cinnamon sugar.</li>
+                </ul>
+                <h3>Drinks</h3>
+                <ul>
+                    <li><b>Bunny Latte</b><br>creamy coffee latte with silky foam.</li>
+                    <li><b>Matcha Hop</b><br>smooth Japanese matcha latte.</li>
+                    <li><b>Strawberry Milk Hop</b><br>fresh strawberry milk with a hint of sweetness.</li>
+                    <li><b>Honey Lemon Fizz</b><br>sparkling honey-lemon drink, refreshing & light.</li>
+                    <li><b>Classic Iced Tea</b><br>chilled brewed tea with a crisp, clean taste.</li>
+                </ul>
+            </section>
+
+            <section class="order-form-section">
+                <h2 class="heading" id="order-form">Place Your Order</h2>
+                <form>
+                    <label for=""name">Name:</label>
+                    <input type=""text" id="name" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <br><br>
+                    <p>Fluffy Pancake:</p>
+                    <ul>
+                    <li>
+                        <label for="vanila-pancake">Classic Vanilla Cloud: </label>
+                        <input id="vanila-pancake" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="vanila-pancake" name="vanilla"> Extra syrup
+                        <input type="checkbox" id="vanila-pancake" name="vanilla"> Extra butter <br>
+                        <textarea id="vanila-pancake" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="choco-pancake">Choco Hop: </label>
+                        <input id="choco-pancake" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="choco-pancake" name="choco"> Extra ganache
+                        <input type="checkbox" id="choco-pancake" name="choco"> Extra whipped cream <br>
+                        <textarea id="choco-pancake" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="strawberry-pancake"> Strawberry Bunny: </label>
+                        <input id="strawberry-pancake" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="strawberry-pancake" name="strawberries"> Extra strawberries
+                        <input type="checkbox" id="strawberry-pancake" name="strawberries"> Extra whipped cream <br>
+                        <textarea id="strawberry-pancake" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="matcha-pancake">Matcha Meadow: </label>
+                        <input id="matcha-pancake" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="matcha-pancake" name="matcha"> Extra matcha cream
+                        <input type="checkbox" id="matcha-pancake" name="matcha"> Extra sweet cream <br>
+                        <textarea id="matcha-pancake" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="cinnamon-pancake">Cinnamon Pyon: </label>
+                        <input id="cinnamon-pancake" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="cinnamon-pancake" name="cinnamon"> Extra cinnamon sugar
+                        <input type="checkbox" id="cinnamon-pancake" name="cinnamon"> Extra whipped cream <br>
+                        <textarea id="cinnamon-pancake" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
+                    </li>
+                    </ul>
+                    <br>
+                    <p>Drinks:</p>
+                    <ul>
+                    <li>
+                        <label for="bunny-drink">Bunny Latte: </label>
+                        <input id="bunny-drink" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="bunny-drink" name="bunny-latte"> Extra foam
+                        <input type="checkbox" id="bunny-drink" name="bunny-latte"> Extra milk <br>
+                        <input type="checkbox" id="bunny-drink" name="bunny-latte"> Less sweet <br>
+                        <textarea id="bunny-drink" rows="3" cols="40" placeholder="Enter your notes here.."></textarea> 
+                    </li>
+                    <br>
+                    <li>
+                        <label for="matcha-drink">Matcha Hop: </label>
+                        <input id="matcha-drink" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="matcha-drink" name="matcha-hop"> Extra matcha powder
+                        <input type="checkbox" id="matcha-drink" name="matcha-hop"> Extra sweet cream <br>
+                        <input type="checkbox" id="matcha-drink" name="matcha-hop"> Less sweet <br>
+                        <textarea id="matcha-drink" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="strawberry-drink">Strawberry Milk Hop: </label>
+                        <input id="strawberry-drink" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="strawberry-drink" name="strawberry-milk-hop"> Extra strawberries
+                        <input type="checkbox" id="strawberry-drink" name="strawberry-milk-hop"> Extra whipped cream <br>
+                        <input type="checkbox" id="strawberry-drink" name="strawberry-milk-hop"> Less sweet <br>
+                        <textarea id="strawberry-drink" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="honey-drink">Honey Lemon Fizz: </label>
+                        <input id="honey-drink" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="honey-drink" name="honey-lemon"> Extra honey
+                        <input type="checkbox" id="honey-drink" name="honey-lemon"> Extra lemon juice <br>
+                        <input type="checkbox" id="honey-drink" name="honey-lemon"> Less sweet <br>
+                        <textarea id="honey-drink" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="tea-drink">Classic Iced Tea: </label>
+                        <input id="tea-drink" type="number" min="0" max="10"><br>
+                        <input type="checkbox" id="tea-drink" name="tea"> Extra tea
+                        <input type="checkbox" id="tea-drink" name="tea"> Extra ice <br>
+                        <input type="checkbox" id="tea-drink" name="tea"> Less ice
+                        <input type="checkbox" id="tea-drink" name="tea"> Less sweet <br>
+                        <textarea id="tea-drink" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
+                    </li>
+                    </ul>
+                    <input type="submit" value="Go to checkout">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p> Made with love by Nayyara Marshall </p>
+        </footer>
+    </body>
+</html>
