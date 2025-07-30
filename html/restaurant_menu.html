@@ -2,21 +2,130 @@
 <html>
     <head>
         <title>Hopcake</title>
-        <style>
-            
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Hopcake</h1>
-            <nav>
-                <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#order-form">Order</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 40px;
+        padding: 50px;
+    }
+    .header {
+        background-color: #f50c80;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 0 15px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #f5f5f5;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .navbar a:hover {
+        color: #ffb3d9;
+    }
+
+    .intro-section {
+        background-color: #fce4ec;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .menu-section {
+        background-color: #f8fe78;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .order-form-section {
+        background-color: #e8f5e9;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .heading {
+        color: #f50c80;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+
+    .article-container {
+    display: flex;
+    gap: 20px; 
+    }
+
+    article {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 20px;
+        border-color: #f50c80; 
+        border-width: 2px;
+        border-style: solid;
+        flex: 1; 
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .menu-type {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        border-color: #f50c80; 
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    .checkout-button {
+        background-color: #f50c80;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <header class="header">
+        <h1>Hopcake</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <br>
         <main>
             <section class="intro-section">
                 <h2>Welcome to Hopcake! 🐇</h2>
@@ -26,28 +135,89 @@
                 <p>Take a hop into our menu below and discover your next favorite treat! 🥞</p>
             </section>
 
+            <br>
+
             <section class="menu-section">
                 <h2 class="heading" id="menu">Menu</h2>
-                <h3>Fluffy Pancakes</h3>
-                <ul>
-                    <li><b>Classic Vanilla Cloud</b><br>soft, fluffy pancake with maple syrup & butter.</li>
-                    <li><b>Choco Hop</b><br>rich chocolate pancake topped with smooth ganache.</li>
-                    <li><b>Strawberry Bunny</b><br>fluffy pancake with fresh strawberries & whipped cream.</li>
-                    <li><b>Matcha Meadow</b><br>matcha-flavored pancake with sweet cream.</li>
-                    <li><b>Cinnamon Pyon</b><br>warm pancake sprinkled with cinnamon sugar.</li>
-                </ul>
-                <h3>Drinks</h3>
-                <ul>
-                    <li><b>Bunny Latte</b><br>creamy coffee latte with silky foam.</li>
-                    <li><b>Matcha Hop</b><br>smooth Japanese matcha latte.</li>
-                    <li><b>Strawberry Milk Hop</b><br>fresh strawberry milk with a hint of sweetness.</li>
-                    <li><b>Honey Lemon Fizz</b><br>sparkling honey-lemon drink, refreshing & light.</li>
-                    <li><b>Classic Iced Tea</b><br>chilled brewed tea with a crisp, clean taste.</li>
-                </ul>
+                
+                <h3 class="menu-type">PANCAKES</h3>
+
+                <br>
+
+                <div class="article-container">
+                <article>
+                <h3>Classic Vanilla Cloud Pancakes</h3>
+                <img src="https://i.pinimg.com/1200x/a8/00/0e/a8000ec7473f5e1d7667d1776bcef852.jpg" alt="Classic Vanilla Cloud Pancake" width="200">
+                <p>Soft fluffy pancakes topped with maple syrup and butter. (<i>$4.99</i>)</p>
+                </article>  
+                <br>
+                <article>
+                <h3>Choco Hop</h3>
+                <img src="https://i.pinimg.com/1200x/bb/46/0c/bb460c33da11edcd7ecb88cb08662037.jpg" alt="Choco Hop Pancake" width="200">
+                <p>Rich chocolate pancake topped with smooth ganache. (<i>$4.50</i>)</p>
+                </article>
+                <br>
+                <article>
+                <h3>Strawberry Bunny</h3>
+                <img src="https://i.pinimg.com/1200x/a1/28/d3/a128d3b20db58946b70fe1098d28daea.jpg" alt="Strawberry Bunny Pancake" width="200">
+                <p>Fluffy pancake with fresh strawberries and whipped cream. (<i>$5.50</i>)</p>
+                </article>
+                <br>
+                <article>
+                <h3>Matcha Meadow</h3>
+                <img src="https://i.pinimg.com/736x/86/ca/7a/86ca7a3c1f2a547fbad842a6d6eb36dd.jpg" alt="Matcha Meadow Pancake" width="200">
+                <p>Vanila-flavored pancake with sweet cream and matcha powder. (<i>$4.40</i>)</p>
+                </article>
+                <br>
+                <article>
+                <h3>Blueberry Pyon</h3>
+                <img src="https://i.pinimg.com/736x/0a/3c/25/0a3c256d7d3d9f4322be2308f0e9bb62.jpg" alt="Blueberry Pyon Pancake" width="200">
+                <p>Warm pancake topped with blueberries. (<i>$5.30</i>)</p>
+                </article>
+                </div>
+                <br>
+
+                <h3 class="menu-type">DRINKS</h3>
+
+                <br>
+                <div class="article-container">
+                <article>
+                <h3>Bunny Latte</h3>
+                <img src="https://i.pinimg.com/736x/2e/00/f7/2e00f72c2d5c28207d5ebd0f29ed32d7.jpg" alt="Bunny Latte" width="200">
+                <p>Creamy coffee latte with silky foam. (<i>$3.50</i>)</p>
+                </article>
+                <br>
+                <article>
+                <h3>Matcha Hop</h3>
+                <img src="https://i.pinimg.com/736x/78/e9/bb/78e9bb7e16e8ccb40676d1fc30dea4d9.jpg" alt="Matcha Hop" width="200">
+                <p>Smooth Japanese matcha latte. (<i>$4.50</i>)</p>
+                </article>
+                <br>
+                <article>
+                <h3>Strawberry Milk Hop</h3>
+                <img src="https://i.pinimg.com/1200x/d4/84/20/d4842038272fca18482f8d8805a88b99.jpg" alt="Strawberry Milk Hop" width="200">
+                <p>Fresh strawberry milk with a hint of sweetness. (<i>$4.50</i>)</p>
+                </article>
+                <br>
+                <article>
+                <h3>Honey Lemon Fizz</h3>
+                <img src="https://i.pinimg.com/736x/e9/55/37/e955374b7529c6bebee15754d310fab1.jpg" alt="Honey Lemon Fizz" width="200">
+                <p>Sparkling honey-lemon drink, refreshing & light. (<i>$4.50</i>)</p>
+                </article>
+                <br>
+                <article>
+                <h3>Classic Iced Tea</h3>
+                <img src="https://i.pinimg.com/736x/31/55/45/3155458f963f7c9194b32b99f4a7a8f7.jpg" alt="Classic Iced Tea" width="200">
+                <p>Chilled brewed tea with a crisp, clean taste. (<i>$3.50</i>)</p>
+                </article>
+                </div>
             </section>
+
+            <br>
 
             <section class="order-form-section">
                 <h2 class="heading" id="order-form">Place Your Order</h2>
+                <br>
                 <form>
                     <label for=""name">Name:</label>
                     <input type=""text" id="name" required>
@@ -55,6 +225,7 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" required>
                     <br><br>
+                    <div class="form-group">
                     <p>Fluffy Pancake:</p>
                     <ul>
                     <li>
@@ -97,7 +268,9 @@
                         <textarea id="cinnamon-pancake" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
                     </li>
                     </ul>
+                    </div>
                     <br>
+                    <div class="form-group">
                     <p>Drinks:</p>
                     <ul>
                     <li>
@@ -146,11 +319,14 @@
                         <textarea id="tea-drink" rows="3" cols="40" placeholder="Enter your notes here.."></textarea>
                     </li>
                     </ul>
-                    <input type="submit" value="Go to checkout">
+                    </div>
+                    <div class="button">
+                    <input type="submit" value="Go to checkout" class="checkout-button">
+                    </div>
                 </form>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <p> Made with love by Nayyara Marshall </p>
         </footer>
     </body>
